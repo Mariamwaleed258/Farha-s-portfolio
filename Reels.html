@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reels.css">
+  <title>Farha Waleed</title>
+</head>
+ <body>
+  <div class="reels-container">
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485973/teaser_new_sd4vfy.mp4" type="video/mp4">
+    </video>
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763498174/hooka_final_1_m65izr.mp4" type="video/mp4">
+    </video>
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485292/Tomato_a2kwed.mp4"type="video/mp4">
+    </video>
+      <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763497083/main_bashwat_1_xub5ki.mp4" type="video/mp4">
+    </video>
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485211/brain_cake_w9y3b0.mp4" type="video/mp4">
+    </video>
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485279/caiser_et4wwr.mp4" type="video/mp4">
+    </video>
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485403/kids_f8koua.mp4" type="video/mp4">
+    </video>
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763486011/%D9%8A%D9%88%D8%B3%D9%81_%D8%AA%D8%AD%D8%AF%D9%8A_r7dcpj.mp4" type="video/mp4">
+    </video>
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763498313/om_khaled_dgynsl.mp4" type="video/mp4">
+    </video>
+  </div>
+<script>
+  const videos = document.querySelectorAll('video');
+  videos.forEach(video => {
+    video.addEventListener('play', () => {
+      videos.forEach(v => {
+        if (v !== video) v.pause();
+      });
+    });
+  });
+</script>
+</body>
+</html>

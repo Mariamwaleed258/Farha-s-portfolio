@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/vids.css">
+  <title>Farha Waleed</title>
+</head>
+<body>
+ <body>
+  <div class="vids-container">
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763491501/1_min_with_gfx_dlubll.mp4" type="video/mp4">
+    </video>
+  <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763486107/podcast_z7azvx.mp4" type="video/mp4">
+    </video>
+     <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763486080/nora_fxg9gh.mp4" type="video/mp4">
+    </video>
+       <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485067/nis1_n3z7df.mp4" type="video/mp4">
+    </video>
+     <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763486093/ramdan_ylumpz.mp4" type="video/mp4">
+    </video>
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485060/nis2_vz2ffh.mp4" type="video/mp4">
+    </video>
+     <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485020/come_to_egypt_dsb2i0.mp4" type="video/mp4">
+    </video>
+    <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485078/egypt_yifqff.mp4" type="video/mp4">
+      </video>
+     <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485010/egy_lac1du.mp4" type="video/mp4">
+    </video>
+       <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+      <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485151/icy_tower_dsyvfs.mp4" type="video/mp4">
+    </video>
+  </div>
+<script>
+  const videos = document.querySelectorAll('video');
+
+  videos.forEach(video => {
+    video.addEventListener('play', () => {
+      videos.forEach(v => {
+        if (v !== video) v.pause();
+      });
+    });
+  });
+</script>
+</body>
+</html>

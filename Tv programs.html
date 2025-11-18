@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/tv programs.css">
+       <title>Farha Waleed</title>
+    </head>
+    <body>
+        <div class="tvPrograms-container">
+            <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+                <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485367/reham_jpq8ps.mp4" type="video/mp4">
+            </video>
+            <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata" >
+                <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763497770/ham_m3_reham_qg4hjb.mp4" type="video/mp4">
+            </video>
+            <video controls  controlsList="nodownload" preload="metadata" oncontextmenu="return false;" preload="metadata">
+                <source src="https://res.cloudinary.com/du0ul4ojw/video/upload/v1763485366/hia_w_hon_jgo6uw.mp4" type="video/mp4">
+            </video>
+        </div>
+<script>
+  const videos = document.querySelectorAll('video');
+  videos.forEach(video => {
+    video.addEventListener('play', () => {
+      videos.forEach(v => {
+        if (v !== video) v.pause();
+      });
+    });
+  });
+</script>
+    </body>
+</html>
